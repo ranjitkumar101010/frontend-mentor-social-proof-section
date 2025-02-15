@@ -1,0 +1,226 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: white;
+    font-family: "League Spartan", serif;
+  }
+
+  .flxbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    height: 100vh;
+    padding: 50px;
+    background-image: url("images/bg-pattern-top-desktop.svg"),
+      url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0px 0px, 300px 100px;
+  }
+
+  .container {
+    max-width: 1111px;
+  }
+
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .hero-content {
+    width: 60%;
+  }
+
+  .ratings-section {
+    width: 40%;
+  }
+
+  .hero-content h1 {
+    font-size: 45px;
+    width: 60%;
+    margin-bottom: 20px;
+    color: #522351;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 1.5rem;
+    width: 60%;
+    color: hsl(303, 10%, 53%);
+  }
+
+  .ratings-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ratings-container {
+    padding: 15px 30px;
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    gap: 20px;
+    border-radius: 5px;
+    width: fit-content;
+    align-items: center;
+  }
+
+  .ratings img {
+    width: 15px;
+  }
+
+  .ratings-container span {
+    font-weight: 700;
+    font-size: 14px;
+    color: hsl(300, 43%, 22%);
+  }
+
+  .review-rating {
+    align-self: flex-start;
+  }
+
+  .guru-rating {
+    align-self: center;
+  }
+
+  .besttech-rating {
+    align-self: flex-end;
+  }
+
+  .testimonials-section {
+    flex-direction: row;
+    gap: 50px;
+    color: white;
+  }
+
+  .testimonials-container {
+    padding: 40px;
+    background-color: #522351;
+    border-radius: 5px;
+    gap: 20px;
+  }
+
+  .user-section {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .user-section img {
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .user-details h2 {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  .user-details span {
+    font-size: 12px;
+    color: hsl(333, 80%, 67%);
+  }
+
+  .testimonial-content {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+
+  .testimonial1 {
+    margin-top: 0px;
+  }
+
+  .testimonial2 {
+    margin-top: 30px;
+  }
+
+  .testimonial3 {
+    margin-top: 60px;
+  }
+
+  footer {
+    padding: 10px;
+    background-color: white;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(333, 80%, 67%);
+  }
+
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      height: auto;
+      padding: 50px 10px;
+      background-image: url("images/bg-pattern-top-mobile.svg"),
+        url("images/bg-pattern-bottom-mobile.svg");
+      background-size: contain, contain;
+      background-position: top, bottom;
+    }
+
+    .container {
+      width: 90%;
+    }
+
+    .top-section {
+      flex-direction: column;
+    }
+
+    .hero-content {
+      width: 100%;
+    }
+
+    .hero-content h1,
+    .hero-content p {
+      width: 100%;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .ratings-section {
+      width: 100%;
+    }
+
+    .ratings-container {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .testimonials-section {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .testimonial2 {
+      margin-top: 10px;
+    }
+
+    .testimonial3 {
+      margin-top: 10px;
+    }
+  }
